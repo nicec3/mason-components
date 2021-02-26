@@ -1,28 +1,3 @@
-# 通用模板
-
-### 安装
-``` bash
-npm i wuxibotestmason
-# 或者
-yarn add wuxibotestmason
-```
-
-### 引用
-``` javascript
-import { Integration } from "wuxibotestmason";
-export default {
-  components: { Integration }
-}
-```
-### 使用
-``` html
-<template>
-  <Integration :data="modelConf" :fieldConfig="fieldConfig" />
-</template>
-```
-
-### 完整代码
-``` html
 <template>
   <div class="test">
     <Integration
@@ -35,6 +10,7 @@ export default {
 </template>
 
 <script>
+// import { Integration } from "../mason-components/index";
 import { Integration } from "wuxibotestmason"; // wuxibotestmason模块
 import "wuxibotestmason/lib/wuxibotestmason.css"; // wuxibotestmason样式
 // 接口请求
@@ -326,15 +302,3 @@ export default {
   created() {},
 };
 </script>
-
-```
-
-### 可用参数
-``` JavaScript
-/* 按钮区： 新增，导出，导入，批量。支持扩展。
- * 搜索区： 输入框，下拉（多、单选），搜索
- * 列表区： 常规字段，图片，标签（带颜色，单标签，多标签）
- * 新增&编辑区： 输入框，下拉（多、单选），上传图片
- */
-Integration // 详细使用方法，请参考上面完整代码。
-```
